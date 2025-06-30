@@ -1,4 +1,4 @@
-// js/levels.js
+
 
 export const levels = [
   // Nível 0: simples, 2 cores, 4 tubos
@@ -28,7 +28,7 @@ export const levels = [
     []
   ],
 
-  // Nível 3: 5 cores , 7 tubos
+  // Nível 3: 5 cores, 7 tubos
   [
     ["yellow", "blue", "violet", "red"],
     ["green", "red", "violet", "yellow"],
@@ -39,13 +39,13 @@ export const levels = [
     []
   ],
 
-  // Nível 4: 6 cores, 7 tubos (desafio final)
+  // ✅ Nível 4 corrigido: 5 cores, 7 tubos
   [
-    ["violet", "orange", "green", "red", "blue", "yellow"],
-    ["red", "yellow", "green", "orange", "blue", "violet"],
-    ["yellow", "violet", "blue", "green", "orange", "red"],
-    ["green", "blue", "red", "yellow", "violet", "orange"],
-    [],
+    ["red", "green", "blue", "yellow"],
+    ["orange", "red", "green", "blue"],
+    ["yellow", "orange", "red", "green"],
+    ["blue", "yellow", "orange", "red"],
+    ["green", "blue", "yellow", "orange"],
     [],
     []
   ]
