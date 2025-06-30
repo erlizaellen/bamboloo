@@ -1,0 +1,35 @@
+/* Responsividade básica para telas menores */
+@media (max-width: 768px) {
+  .tube {
+    width: 50px;
+    height: 140px;
+  }
+
+  .panda-slot {
+    height: 25px;
+  }
+
+  button.btn-success {
+    font-size: 1rem;
+    padding: 8px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tube {
+    width: 45px;
+    height: 130px;
+  }
+
+  .panda-slot {
+    height: 22px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #move-count {
+    font-size: 1.1rem;
+  }
+}

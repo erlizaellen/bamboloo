@@ -1,0 +1,31 @@
+/* css/style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bg-green {
+  background: linear-gradient(to bottom right, #C8E6C9) ;
+  
+}
+
+
+.tube {
+  height: 160px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+
+.panda-slot {
+  border-radius: 8px;
+  margin-bottom: 4px;
+  transition: transform 0.2s ease;
+}
+
+.panda-slot:hover {
+  transform: scale(1.05);
+}
+
+.empty {
+  background-color: #e9ecef;
+}
