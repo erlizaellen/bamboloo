@@ -33,7 +33,7 @@ O jogo possui **5 níveis**, com dificuldade progressiva:
 
 ## 📸 Captura de tela
 
-![Tela inicial do Bamboloo](./assets/images/bambolootelainicial.png)
+![Tela inicial do Bamboloo](./assets/images/bambolootelainicial.jpeg)
 
 ## 🚀 Como rodar localmente
 
