@@ -11,7 +11,7 @@
 
 ## 🌈 Níveis
 
-O jogo possui **5 níveis**, com dificuldade progressiva:
+O jogo possui **42 níveis**, com dificuldade progressiva:
 1. 🐾 Nível 1 – 2 cores
 2. 🎋 Nível 2 – 3 cores
 3. 🌈 Nível 3 – 4 cores
