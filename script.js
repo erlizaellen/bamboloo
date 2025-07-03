@@ -1,5 +1,3 @@
-// js/script.js
-
 import { levels } from "./js/levels.js";
 import { renderTubes } from "./js/renderer.js";
 
@@ -9,6 +7,18 @@ let gameState = {
   moveCount: 0,
   selectedTube: null
 };
+
+// Agora esta função está acessível globalmente
+function initializeGame(levelIndex) {
+  const tubes = JSON.parse(JSON.stringify(levels[levelIndex]));
+  gameState = {
+    tubes,
+    moveCount: 0,
+    selectedTube: null
+  };
+  renderTubes(tubes, handleTubeClick);
+  updateMoveCount(0);
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const startButton = document.getElementById("start-button");
@@ -22,9 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   window.backToLevelScreen = () => {
-  document.querySelector(".game-screen").style.display = "none";
-  document.querySelector(".level-screen").style.display = "block";
-};
+    gameScreen.style.display = "none";
+    levelScreen.style.display = "block";
+  };
 
   window.startGameWithLevel = (levelIndex) => {
     levelScreen.style.display = "none";
@@ -36,34 +46,25 @@ document.addEventListener("DOMContentLoaded", () => {
   window.resetGame = () => {
     initializeGame(currentLevel);
   };
+});
 
-  function initializeGame(levelIndex) {
-    const tubes = JSON.parse(JSON.stringify(levels[levelIndex]));
-    gameState = {
-      tubes,
-      moveCount: 0,
-      selectedTube: null
-    };
-    renderTubes(tubes, handleTubeClick);
-    updateMoveCount(0);
-  }
+function handleTubeClick(index) {
+  const { tubes, selectedTube } = gameState;
 
-  function handleTubeClick(index) {
-    const { tubes, selectedTube } = gameState;
-
-    if (selectedTube === null) {
-      gameState.selectedTube = index;
-    } else {
-      if (selectedTube !== index) {
-        movePanda(selectedTube, index);
-      }
-      gameState.selectedTube = null;
+  if (selectedTube === null) {
+    gameState.selectedTube = index;
+  } else {
+    if (selectedTube !== index) {
+      movePanda(selectedTube, index);
     }
-    renderTubes(tubes, handleTubeClick, gameState.selectedTube);
+    gameState.selectedTube = null;
   }
+
+  renderTubes(gameState.tubes, handleTubeClick, gameState.selectedTube);
+}
 
 function movePanda(from, to) {
-  const tubes = gameState.tubes;
+  const { tubes } = gameState;
   const fromTube = tubes[from];
   const toTube = tubes[to];
 
@@ -78,16 +79,15 @@ function movePanda(from, to) {
     toTube.push(fromTube.pop());
     gameState.moveCount++;
     updateMoveCount(gameState.moveCount);
-    checkWinCondition(); 
+    checkWinCondition();
   }
+}
 
+function updateMoveCount(count) {
+  document.getElementById("move-count").textContent = count;
+}
 
-  }
-
-  function updateMoveCount(count) {
-    document.getElementById("move-count").textContent = count;
-  }
-  function checkWinCondition() {
+function checkWinCondition() {
   const { tubes } = gameState;
   const isWin = tubes.every(tube => {
     return (
@@ -110,5 +110,3 @@ function movePanda(from, to) {
     }, 300);
   }
 }
-
-});

@@ -48,8 +48,285 @@ export const levels = [
     []
   ],
 
-  // Níveis 5 a 32 omitidos por brevidade...
+ // Nível 5
+[
+  ["red", "green", "blue", "yellow"],
+  ["yellow", "blue", "red", "green"],
+  ["green", "red", "yellow", "blue"],
+  ["blue", "yellow", "green", "red"],
+  [],
+  []
+],
 
+// Nível 6
+[
+  ["yellow", "green", "blue", "red"],
+  ["red", "yellow", "green", "blue"],
+  ["blue", "red", "yellow", "green"],
+  ["green", "blue", "red", "yellow"],
+  [],
+  []
+],
+
+// Nível 7
+[
+  ["green", "blue", "yellow", "red"],
+  ["yellow", "green", "red", "blue"],
+  ["red", "yellow", "blue", "green"],
+  ["blue", "red", "green", "yellow"],
+  [],
+  []
+],
+
+// Nível 8
+[
+  ["blue", "red", "green", "yellow"],
+  ["green", "blue", "yellow", "red"],
+  ["yellow", "green", "blue", "red"],
+  ["red", "yellow", "green", "blue"],
+  [],
+  []
+],
+
+// Nível 9
+[
+  ["red", "yellow", "green", "blue"],
+  ["blue", "green", "red", "yellow"],
+  ["yellow", "red", "blue", "green"],
+  ["green", "yellow", "blue", "red"],
+  [],
+  []
+],
+
+// Nível 10
+[
+  ["green", "red", "yellow", "blue"],
+  ["yellow", "blue", "green", "red"],
+  ["red", "yellow", "blue", "green"],
+  ["blue", "green", "red", "yellow"],
+  [],
+  []
+],
+
+// Nível 11
+[
+  ["yellow", "blue", "green", "red"],
+  ["red", "green", "yellow", "blue"],
+  ["green", "yellow", "red", "blue"],
+  ["blue", "red", "yellow", "green"],
+  [],
+  []
+],
+
+// Nível 12
+[
+  ["blue", "yellow", "red", "green"],
+  ["green", "yellow", "blue", "red"],
+  ["yellow", "red", "green", "blue"],
+  ["red", "blue", "green", "yellow"],
+  [],
+  []
+],
+
+// Nível 13
+[
+  ["red", "green", "yellow", "blue"],
+  ["yellow", "blue", "green", "red"],
+  ["blue", "yellow", "red", "green"],
+  ["green", "red", "blue", "yellow"],
+  [],
+  []
+],
+
+// Nível 14
+[
+  ["green", "yellow", "blue", "red"],
+  ["blue", "red", "green", "yellow"],
+  ["red", "green", "blue", "yellow"],
+  ["yellow", "blue", "red", "green"],
+  [],
+  []
+],
+
+// Nível 15
+[
+  ["yellow", "red", "green", "blue"],
+  ["red", "blue", "yellow", "green"],
+  ["blue", "green", "red", "yellow"],
+  ["green", "yellow", "blue", "red"],
+  [],
+  []
+],
+
+// Nível 16
+[
+  ["red", "blue", "green", "yellow"],
+  ["green", "red", "blue", "yellow"],
+  ["yellow", "green", "red", "blue"],
+  ["blue", "yellow", "green", "red"],
+  [],
+  []
+],
+
+// Nível 17
+[
+  ["blue", "green", "red", "yellow"],
+  ["yellow", "red", "blue", "green"],
+  ["red", "yellow", "green", "blue"],
+  ["green", "blue", "yellow", "red"],
+  [],
+  []
+],
+
+// Nível 18
+[
+  ["green", "yellow", "red", "blue"],
+  ["blue", "yellow", "green", "red"],
+  ["yellow", "green", "blue", "red"],
+  ["red", "blue", "yellow", "green"],
+  [],
+  []
+],
+
+// Nível 19
+[
+  ["yellow", "green", "red", "blue"],
+  ["red", "green", "blue", "yellow"],
+  ["green", "blue", "yellow", "red"],
+  ["blue", "red", "yellow", "green"],
+  [],
+  []
+],
+
+// Nível 20
+[
+  ["blue", "green", "yellow", "red"],
+  ["yellow", "blue", "green", "red"],
+  ["green", "yellow", "red", "blue"],
+  ["red", "blue", "green", "yellow"],
+  [],
+  []
+],
+
+// Nível 21
+[
+  ["red", "blue", "yellow", "green"],
+  ["blue", "yellow", "green", "red"],
+  ["yellow", "green", "blue", "red"],
+  ["green", "red", "yellow", "blue"],
+  [],
+  []
+],
+
+// Nível 22
+[
+  ["green", "red", "blue", "yellow"],
+  ["red", "yellow", "green", "blue"],
+  ["blue", "red", "yellow", "green"],
+  ["yellow", "blue", "red", "green"],
+  [],
+  []
+],
+
+// Nível 23
+[
+  ["blue", "yellow", "red", "green"],
+  ["green", "blue", "yellow", "red"],
+  ["red", "green", "blue", "yellow"],
+  ["yellow", "red", "green", "blue"],
+  [],
+  []
+],
+
+// Nível 24
+[
+  ["yellow", "red", "blue", "green"],
+  ["red", "blue", "green", "yellow"],
+  ["blue", "green", "yellow", "red"],
+  ["green", "yellow", "red", "blue"],
+  [],
+  []
+],
+
+// Nível 25
+[
+  ["red", "green", "blue", "yellow"],
+  ["yellow", "green", "red", "blue"],
+  ["blue", "yellow", "green", "red"],
+  ["green", "blue", "yellow", "red"],
+  [],
+  []
+],
+
+// Nível 26
+[
+  ["green", "yellow", "red", "blue"],
+  ["blue", "green", "yellow", "red"],
+  ["red", "blue", "green", "yellow"],
+  ["yellow", "red", "blue", "green"],
+  [],
+  []
+],
+
+// Nível 27
+[
+  ["blue", "green", "red", "yellow"],
+  ["green", "red", "blue", "yellow"],
+  ["red", "yellow", "green", "blue"],
+  ["yellow", "blue", "red", "green"],
+  [],
+  []
+],
+
+// Nível 28
+[
+  ["yellow", "blue", "green", "red"],
+  ["blue", "green", "yellow", "red"],
+  ["green", "yellow", "blue", "red"],
+  ["red", "blue", "green", "yellow"],
+  [],
+  []
+],
+
+// Nível 29
+[
+  ["red", "yellow", "blue", "green"],
+  ["yellow", "blue", "green", "red"],
+  ["blue", "green", "red", "yellow"],
+  ["green", "red", "yellow", "blue"],
+  [],
+  []
+],
+
+// Nível 30
+[
+  ["green", "blue", "red", "yellow"],
+  ["blue", "red", "yellow", "green"],
+  ["red", "yellow", "blue", "green"],
+  ["yellow", "green", "red", "blue"],
+  [],
+  []
+],
+
+// Nível 31
+[
+  ["yellow", "green", "blue", "red"],
+  ["green", "blue", "red", "yellow"],
+  ["blue", "red", "yellow", "green"],
+  ["red", "yellow", "green", "blue"],
+  [],
+  []
+],
+
+// Nível 32
+[
+  ["red", "green", "yellow", "blue"],
+  ["green", "yellow", "blue", "red"],
+  ["yellow", "blue", "red", "green"],
+  ["blue", "red", "green", "yellow"],
+  [],
+  []
+],
   // Nível 33: 6 cores, 8 tubos
   [
     ["yellow", "red", "blue", "violet"],
