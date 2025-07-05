@@ -16,9 +16,11 @@ function initializeGame(levelIndex) {
     moveCount: 0,
     selectedTube: null
   };
+  document.getElementById("level-indicator").textContent = `🎯 Nível ${levelIndex + 1}`;
   renderTubes(tubes, handleTubeClick);
   updateMoveCount(0);
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const startButton = document.getElementById("start-button");
@@ -102,11 +104,23 @@ function checkWinCondition() {
         title: "🎉 Você venceu!",
         text: `Movimentos: ${gameState.moveCount}`,
         icon: "success",
-        confirmButtonText: "Jogar novamente",
-      }).then(() => {
-        document.querySelector(".game-screen").style.display = "none";
-        document.querySelector(".level-screen").style.display = "block";
+        showCancelButton: currentLevel < levels.length - 1,
+        confirmButtonText: currentLevel < levels.length - 1 ? "➡️ Próximo Nível" : "🔁 Jogar novamente",
+        cancelButtonText: "🏠 Voltar ao menu"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          if (currentLevel < levels.length - 1) {
+            currentLevel++;
+            initializeGame(currentLevel);
+          } else {
+            initializeGame(currentLevel); // Reinicia mesmo nível se for o último
+          }
+        } else {
+          document.querySelector(".game-screen").style.display = "none";
+          document.querySelector(".level-screen").style.display = "block";
+        }
       });
     }, 300);
   }
 }
+
